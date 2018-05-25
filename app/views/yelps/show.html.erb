@@ -1,6 +1,9 @@
 <h1><%= @yep.name %></h1>
 <h4><%= @yep.rating %></h1>
 <p><%= @yep.review %></p>
+<%= link_to 'edit Page', edit_yelp_path(@yep)%>
+<%= link_to 'Destroy', @yep, method: :delete%>
+ <br/>
 <%= link_to 'Back', yelps_path %>
  
 
