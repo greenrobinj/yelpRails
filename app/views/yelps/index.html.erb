@@ -1,0 +1,8 @@
+<h1> What to eat </h1>
+<h3>from best to worst</h3>
+<% @yeps.each do |yep| %>
+  <h2><%= yep.name %></h2>
+  <%= link_to 'Show Page', yelp_path(yep) %>
+  <%= link_to 'edit Page', edit_yelp_path(yep)%>
+  <%= link_to 'Destroy', yep, method: :delete%>
+<% end %>
